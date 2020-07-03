@@ -6,7 +6,7 @@
 const q1 = (req, res) => {
   // there is nothing to do here for this question
 
-  res.render("pages/question1");
+  res.render("pages/question1", { questionNumber: 1 });
 };
 
 // -----------------------------------------------
@@ -15,7 +15,7 @@ const q1 = (req, res) => {
 const q2 = (req, res) => {
   // pass this variable to the ejs file and render it in the answer box.
   const sentence = "<p>This is the way.</p>";
-  res.render("pages/question2", { sentence });
+  res.render("pages/question2", { sentence, questionNumber: 2 });
 };
 
 // -----------------------------------------------
@@ -33,7 +33,7 @@ const q3 = (req, res) => {
     favoriteBeverage: "Duff Beer",
   };
 
-  res.render("pages/question3", { homer });
+  res.render("pages/question3", { homer, questionNumber: 3 });
 };
 
 // -----------------------------------------------
@@ -42,7 +42,7 @@ const q3 = (req, res) => {
 const q4 = (req, res) => {
   const popularGirlNames = ["Olivia", "Ruby", "Emily", "Grace", "Jessica"];
 
-  res.render("pages/question4", { popularGirlNames });
+  res.render("pages/question4", { popularGirlNames, questionNumber: 3 });
 };
 
 // -----------------------------------------------
