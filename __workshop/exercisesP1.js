@@ -42,7 +42,7 @@ const q3 = (req, res) => {
 const q4 = (req, res) => {
   const popularGirlNames = ["Olivia", "Ruby", "Emily", "Grace", "Jessica"];
 
-  res.render("pages/question4", { popularGirlNames, questionNumber: 3 });
+  res.render("pages/question4", { popularGirlNames, questionNumber: 4 });
 };
 
 // -----------------------------------------------
@@ -51,7 +51,7 @@ const q4 = (req, res) => {
 const q5 = (req, res) => {
   const popularGirlNames = ["Olivia", "Ruby", "Emily", "Grace", "Jessica"];
 
-  res.render("pages/question5", { popularGirlNames });
+  res.render("pages/question5", { popularGirlNames, questionNumber: 5 });
 };
 
 // We export the functions so that they may be 'required' or imported in other files.
